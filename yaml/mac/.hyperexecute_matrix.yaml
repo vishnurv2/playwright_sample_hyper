@@ -1,0 +1,14 @@
+---
+version: '0.1'
+matrix:
+  os: [mac]
+  files: ["github_test.js","react_app_test.js","todo_test.js"]
+runson: ${matrix.os}
+pre:
+  - npm install
+  - npx playwright install --with-deps
+cacheKey: '{{ checksum "package-lock.json" }}'
+cacheDirectories:
+  - node_modules
+testSuites:
+  - npx codeceptjs run $files --steps
