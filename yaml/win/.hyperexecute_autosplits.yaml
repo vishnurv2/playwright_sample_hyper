@@ -17,5 +17,5 @@ cacheDirectories:
 testDiscovery:
   type: raw
   mode: dynamic
-  command: grep -lr 'describe' tests
+  command: grep -lr 'await' tests
 testRunnerCommand: npx playwright test $test

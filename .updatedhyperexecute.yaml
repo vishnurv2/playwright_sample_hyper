@@ -1,0 +1,34 @@
+version: "0.1"
+user: sparshk
+key: cQmthsRIgiL093OKwyqFITsV7LETRpbt2gkpAdTV2wvpjIxRgi
+testSuites: []
+pre: [npm install, npx playwright install]
+runson: win
+autosplit: true
+concurrency: 2
+testDiscovery:
+  autosubset: true
+  command: grep -lr 'await' tests
+  mode: dynamic
+  type: raw
+testRunnerCommand: npx playwright test $test
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+cacheDirectories:
+- node_modules
+cacheKey: '{{ checksum "package-lock.json" }}'
+maxRetries: 5
+jobID: cc805e55-6ed1-4439-b2c2-e2a119193053
+codeDirectory: testbash2022-ui-challenge
+framework:
+  name: ""
+  flags: []
+  discoveryType: ""
+  workingDirectory: ""
+  isTestNGXMLSuite: false
+  defaultReports: true
+cypress: false
+betaFeature:
+  setPartiallyCompletedAsCompleted: false
+testType: playwright

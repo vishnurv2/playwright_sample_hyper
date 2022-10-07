@@ -1,0 +1,138 @@
+{
+    "id": "cc805e55-6ed1-4439-b2c2-e2a119193053",
+    "created_at": "2022-10-07T06:33:39Z",
+    "update_at": "2022-10-07T06:34:40Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2022-10-07T06:33:48Z",
+    "end_time": "2022-10-07T06:34:40Z",
+    "summary": {
+        "total_time": 61000000000,
+        "execution_time": 52000000000,
+        "total_tasks": 2,
+        "build_time_consumed": 101000000000,
+        "jobTestExecutionTime": "0s",
+        "failed_tasks": 0,
+        "total_stage_info": {
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "scenario": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "test_discovery": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            }
+        },
+        "status": "skipped",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=cc805e55-6ed1-4439-b2c2-e2a119193053"
+    },
+    "tasks": [
+        {
+            "id": "bac59c00-e992-4d71-b8a6-2d59b79957b6",
+            "os": "win",
+            "status": "skipped",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2022-10-07T06:33:47Z",
+            "update_at": "2022-10-07T06:34:38Z",
+            "start_time": "2022-10-07T06:33:48Z",
+            "end_time": "2022-10-07T06:34:38Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "a1ede845-5953-47c8-b51b-5532b05d7ad9",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2022-10-07T06:33:55Z",
+                    "started_at": "2022-10-07T06:33:56Z",
+                    "updated_at": "2022-10-07T06:34:13Z",
+                    "order": 2
+                },
+                {
+                    "id": "2bf5e1f8-d316-4008-a38c-652e7af8e867",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2022-10-07T06:34:14Z",
+                    "started_at": "2022-10-07T06:34:15Z",
+                    "updated_at": "2022-10-07T06:34:18Z",
+                    "order": 3
+                },
+                {
+                    "id": "b25139fd-902a-4589-b310-687bcc09212b",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/test_1.spec.ts",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2022-10-07T06:34:20Z",
+                    "started_at": "2022-10-07T06:34:23Z",
+                    "updated_at": "2022-10-07T06:34:37Z",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "id": "7f48bfe0-f072-40ff-8cd0-5d9575d27fc6",
+            "os": "win",
+            "status": "skipped",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2022-10-07T06:33:47Z",
+            "update_at": "2022-10-07T06:34:40Z",
+            "start_time": "2022-10-07T06:33:49Z",
+            "end_time": "2022-10-07T06:34:40Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "9215d366-bf1f-4be0-984e-373881182cb4",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2022-10-07T06:33:56Z",
+                    "started_at": "2022-10-07T06:33:57Z",
+                    "updated_at": "2022-10-07T06:34:14Z",
+                    "order": 2
+                },
+                {
+                    "id": "085104a1-d238-453d-98e4-33d5957e987f",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2022-10-07T06:34:15Z",
+                    "started_at": "2022-10-07T06:34:17Z",
+                    "updated_at": "2022-10-07T06:34:19Z",
+                    "order": 3
+                },
+                {
+                    "id": "a20bc131-6c51-408e-8ee0-68641e4e66ca",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/test_2.spec.ts",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2022-10-07T06:34:21Z",
+                    "started_at": "2022-10-07T06:34:24Z",
+                    "updated_at": "2022-10-07T06:34:39Z",
+                    "order": 4
+                }
+            ]
+        }
+    ]
+}
