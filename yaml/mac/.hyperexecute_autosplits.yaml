@@ -17,5 +17,5 @@ cacheDirectories:
 testDiscovery:
   type: raw
   mode: dynamic
-  command: grep -lr 'Scenario' *test.js
-testRunnerCommand: npx codeceptjs run $test --steps
+  command: grep -nri 'describe' tests  | sed 's/:test.*//'
+testRunnerCommand: npx playwright test $test
