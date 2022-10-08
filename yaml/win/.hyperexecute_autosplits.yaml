@@ -6,8 +6,8 @@ testSuiteStep: 90
 runson: win
 autosplit: true
 retryOnFailure: false
-maxRetries: 5
-concurrency: 2
+maxRetries: 1
+concurrency: 4
 pre:
   - npm install
   - npx playwright install
@@ -17,5 +17,10 @@ cacheDirectories:
 testDiscovery:
   type: raw
   mode: dynamic
-  command: grep -lr 'await' tests
+  command: grep -lr 'test' tests
 testRunnerCommand: npx playwright test $test
+
+uploadArtefacts:
+  - name: playwright-report
+    path:
+      - playwright-report/**

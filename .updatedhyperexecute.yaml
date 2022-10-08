@@ -1,14 +1,17 @@
 version: "0.1"
-user: sparshk
-key: cQmthsRIgiL093OKwyqFITsV7LETRpbt2gkpAdTV2wvpjIxRgi
+user: vishnurv2
+key: 2dEK8rin7XC3cChRqccFoMlcC9FwPNloQdqV9c4y7vFUAnAB18
 testSuites: []
 pre: [npm install, npx playwright install]
+jobLabel:
+- Sparsh
+- playwright
 runson: win
 autosplit: true
-concurrency: 2
+concurrency: 4
 testDiscovery:
   autosubset: true
-  command: grep -lr 'await' tests
+  command: grep -lr 'test' tests
   mode: dynamic
   type: raw
 testRunnerCommand: npx playwright test $test
@@ -18,9 +21,13 @@ testSuiteStep: 90
 cacheDirectories:
 - node_modules
 cacheKey: '{{ checksum "package-lock.json" }}'
-maxRetries: 5
-jobID: cc805e55-6ed1-4439-b2c2-e2a119193053
-codeDirectory: testbash2022-ui-challenge
+maxRetries: 1
+jobID: 14e89a65-ea52-49f3-aa09-700ca85f7414
+uploadArtefacts:
+- name: playwright-report
+  path:
+  - playwright-report/**
+codeDirectory: playwright-test
 framework:
   name: ""
   flags: []
